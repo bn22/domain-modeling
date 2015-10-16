@@ -49,7 +49,7 @@ func checkCalculateIncome(value : Int?, title : String?, salary : Int?, type : S
     let jobForIncome = Job(title : title, salary : salary, type : type)
     let income = jobForIncome.calculateIncome(hours)
     if (value != nil && title != nil && salary != nil && type != nil && hours != nil){
-        print("Expected result is \(value!) for working \(salary!) for \(hours!) at a \(type!) job")
+        print("Expected result is \(value!) for working \(salary!) for \(hours!) hours at a \(type!) job")
         if(value == income) {
             print("     Unit Test Passed")
         } else {
@@ -64,7 +64,7 @@ func checkRaise(value : Double?, title : String?, salary :Int?, type : String?, 
     let jobForRaise = Job(title : title, salary : salary, type : type)
     let raise = jobForRaise.raise(percent)
     if (value != nil && title != nil && salary != nil && type != nil && percent != nil){
-        print("Expected result is \(value!) for raise of \(percent!) at \(salary!)")
+        print("Expected result is \(value!) for raise of \(percent!)% at \(salary!)")
         if(value == raise) {
             print("     Unit Test Passed")
         } else {

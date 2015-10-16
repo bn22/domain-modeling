@@ -29,10 +29,12 @@ class Family {
             if (legal) {
                 var total = 0
                 for (var index = 0; index < members!.count; index++) {
-                    if (members![index].job!.jobType == "hourly") {
-                        total = total + members![index].job!.calculateIncome(2000)
-                    } else {
-                        total = total + members![index].job!.jobSalary!
+                    if (members![index].currentAge > 16) {
+                        if (members![index].job!.jobType == "hourly") {
+                            total = total + members![index].job!.calculateIncome(2000)
+                        } else {
+                            total = total + members![index].job!.jobSalary!
+                        }
                     }
                 }
                 return total

@@ -93,7 +93,7 @@ func checkHouseholdIncome(value : Int?, person1 : Person?, person2 : Person?, pe
         let per = Family(familyMembers: personArray)
         let familyIncome = per.householdIncome()
         if (person1!.currentAge! >= 21 || person2!.currentAge! >= 21 || person2!.currentAge! >= 21 ) {
-            print("Expected result is \(value!) for family with yearly income of \(person1!.job!.jobSalary!) \(person1!.job!.jobType!) + \(person2!.job!.jobSalary!) \(person2!.job!.jobType!) + \(person3!.job!.jobSalary!) \(person3!.job!.jobType!)")
+            print("Expected result is \(value!) for family with yearly income of \(person1!.job!.jobSalary!) (\(person1!.currentAge!) years old) \(person1!.job!.jobType!) + \(person2!.job!.jobSalary!) \(person2!.job!.jobType!) (\(person2!.currentAge!) years old) + \(person3!.job!.jobSalary!) \(person3!.job!.jobType!)  (\(person3!.currentAge!) years old) ")
             if (familyIncome == value) {
                 print("     Unit Test Passed")
             } else {
@@ -113,11 +113,12 @@ func haveChild(person1 : Person?, person2 : Person?, person3 : Person?, firstNam
         let per = Family(familyMembers: personArray)
         per.haveChild(firstName, lastName: lastName)
         if (person1!.currentAge! >= 21 || person2!.currentAge! >= 21 || person3!.currentAge! >= 21 ) {
-            print("Expected result = New child with first name: \(firstName), last name : \(lastName)")
-            if(person1!.firstName == firstName) {
-                print("     Unit Test Passed")
+            print("Expected result = New child with first name: \(firstName!), last name : \(lastName!)")
+            if (per.members![3].firstName == firstName && per.members![3].lastName == lastName) {
+                per.members![3].printString()
+                print(" Unit Test Passed")
             } else {
-                print("     Unit Test Failed")
+                print(" Unit Test Failed")
             }
         } else {
             print("No one in the family is old enough")

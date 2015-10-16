@@ -82,6 +82,7 @@ checkHouseholdIncome(120000, person1 : nil, person2 : b, person3 : c)
 checkHouseholdIncome(120000, person1 : a, person2 : b, person3 : nil)
 checkHouseholdIncome(110000, person1 : a, person2 : b, person3 : d)
 checkHouseholdIncome(60000, person1 : a, person2 : b, person3 : e)
+checkHouseholdIncome(40000, person1 : a, person2 : d, person3 : e)
 
 let firstName : String? = nil
 print("")

@@ -100,7 +100,7 @@ func checkHouseholdIncome(value : Int?, person1 : Person?, person2 : Person?, pe
                 print("     Unit Test Failed")
             }
         } else {
-          print("No one in the family is old enough")
+          print("No one in the family is old enough since ages of \(person1!.currentAge!), \(person2!.currentAge!) and \(person3!.currentAge!)")
         }
     } else {
         print("One of the People is nil")
@@ -121,7 +121,7 @@ func haveChild(person1 : Person?, person2 : Person?, person3 : Person?, firstNam
                 print(" Unit Test Failed")
             }
         } else {
-            print("No one in the family is old enough")
+            print("No one in the family is old enough since ages of \(person1!.currentAge!), \(person2!.currentAge) and \(person3!.currentAge!)")
         }
     } else {
         print("One of the People is nil or first : \(firstName), last : \(lastName) is nil")

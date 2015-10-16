@@ -83,7 +83,7 @@ func printPerson(first: String?, last : String?, currentJob : Job?, currentSpous
     if (first != nil && last != nil && ageNow != nil) {
         per.printString()
     } else {
-        print("One property of \(first) \(last) \(ageNow) is nil")
+        print("One property of First name: \(first) Last Name: \(last) Age: \(ageNow) is nil")
     }
 }
 
@@ -92,8 +92,8 @@ func checkHouseholdIncome(value : Int?, person1 : Person?, person2 : Person?, pe
         let personArray : [Person]? = [person1!, person2!, person3!]
         let per = Family(familyMembers: personArray)
         let familyIncome = per.householdIncome()
-        if (person1!.currentAge! >= 21 || person1!.currentAge! >= 21 || person1!.currentAge! >= 21 ) {
-            print("Expected result is \(value!) for family income of \(person1!.job!.jobSalary!) + \(person2!.job!.jobSalary!) + \(person3!.job!.jobSalary!)")
+        if (person1!.currentAge! >= 21 || person2!.currentAge! >= 21 || person2!.currentAge! >= 21 ) {
+            print("Expected result is \(value!) for family with yearly income of \(person1!.job!.jobSalary!) \(person1!.job!.jobType!) + \(person2!.job!.jobSalary!) \(person2!.job!.jobType!) + \(person3!.job!.jobSalary!) \(person3!.job!.jobType!)")
             if (familyIncome == value) {
                 print("     Unit Test Passed")
             } else {
@@ -112,7 +112,7 @@ func haveChild(person1 : Person?, person2 : Person?, person3 : Person?, firstNam
         let personArray : [Person]? = [person1!, person2!, person3!]
         let per = Family(familyMembers: personArray)
         per.haveChild(firstName, lastName: lastName)
-        if (person1!.currentAge! >= 21 || person1!.currentAge! >= 21 || person1!.currentAge! >= 21 ) {
+        if (person1!.currentAge! >= 21 || person2!.currentAge! >= 21 || person3!.currentAge! >= 21 ) {
             print("Expected result = New child with first name: \(firstName), last name : \(lastName)")
             if(person1!.firstName == firstName) {
                 print("     Unit Test Passed")

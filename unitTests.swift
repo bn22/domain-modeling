@@ -19,7 +19,7 @@ func checkMoneyAdd (value : Double?, amount: Double?, currency : String?, tCurre
     var money = Money(amount: amount, currency: currency)
     money.addMoney(change, tCurrency: tCurrency)
     if (value != nil && amount != nil && currency != nil && tCurrency != nil && change != nil){
-        print("Expected result is \(value!) for adding \(amount!) \(currency!) to \(change!) \(tCurrency!)")
+        print("Expected result is \(value!) \(tCurrency!) for adding \(amount!) \(currency!) to \(change!) \(tCurrency!)")
         if (money.amount == value && money.currency == tCurrency) {
             print("     Unit Test Passed")
         } else {
@@ -34,7 +34,7 @@ func checkMoneySub(value : Double?, amount: Double?, currency : String?, tCurren
     var money = Money(amount: amount, currency: currency)
     money.subMoney(change, tCurrency: tCurrency)
     if (value != nil && amount != nil && currency != nil && tCurrency != nil && change != nil){
-        print("Expected result is \(value!) for adding \(amount!) \(currency!) to \(change!) \(tCurrency!)")
+        print("Expected result is \(value!) \(tCurrency!) for adding \(amount!) \(currency!) to \(change!) \(tCurrency!)")
         if (money.amount == value && money.currency == tCurrency) {
             print("     Unit Test Passed")
         } else {

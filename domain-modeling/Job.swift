@@ -13,7 +13,7 @@ class Job {
     let jobSalary : Int?
     let jobType : String?
     
-    init(title : String?, salary :Int?, type : String?) {
+    init(title : String?, salary : Int?, type : String?) {
         jobTitle = title
         jobSalary = salary
         jobType = type

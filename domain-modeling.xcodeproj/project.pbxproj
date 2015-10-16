@@ -12,6 +12,7 @@
 		A9BC9B6E1BCF8337000E35B9 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BC9B6D1BCF8337000E35B9 /* Job.swift */; settings = {ASSET_TAGS = (); }; };
 		A9BC9B701BCF9134000E35B9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BC9B6F1BCF9134000E35B9 /* Person.swift */; settings = {ASSET_TAGS = (); }; };
 		A9BC9B721BCF9605000E35B9 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BC9B711BCF9605000E35B9 /* Family.swift */; settings = {ASSET_TAGS = (); }; };
+		A9CD40E21BD0415000AAD60E /* unitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD40E11BD0415000AAD60E /* unitTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		A9BC9B6D1BCF8337000E35B9 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		A9BC9B6F1BCF9134000E35B9 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A9BC9B711BCF9605000E35B9 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
+		A9CD40E11BD0415000AAD60E /* unitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = unitTests.swift; path = ../unitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		A9BC9B631BCF8198000E35B9 /* domain-modeling */ = {
 			isa = PBXGroup;
 			children = (
+				A9CD40E11BD0415000AAD60E /* unitTests.swift */,
 				A9BC9B641BCF8198000E35B9 /* main.swift */,
 				A9BC9B711BCF9605000E35B9 /* Family.swift */,
 				A9BC9B6F1BCF9134000E35B9 /* Person.swift */,
@@ -133,6 +136,7 @@
 				A9BC9B721BCF9605000E35B9 /* Family.swift in Sources */,
 				A9BC9B6C1BCF81C7000E35B9 /* Money.swift in Sources */,
 				A9BC9B6E1BCF8337000E35B9 /* Job.swift in Sources */,
+				A9CD40E21BD0415000AAD60E /* unitTests.swift in Sources */,
 				A9BC9B701BCF9134000E35B9 /* Person.swift in Sources */,
 				A9BC9B651BCF8198000E35B9 /* main.swift in Sources */,
 			);
@@ -252,6 +256,7 @@
 				A9BC9B6A1BCF8198000E35B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

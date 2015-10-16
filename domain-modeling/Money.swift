@@ -15,7 +15,7 @@ struct Money {
                 amount = conversions(currency!, target : newCurrency!, amount : amount!)
                 currency = newCurrency
             } else {
-                print("Convert to \(newCurrency!) is Invalid because it is not supported")
+                print("Convert to \(newCurrency!) is invalid because it is not supported")
             }
         } else {
             print("Unable to convert since one property is nil")

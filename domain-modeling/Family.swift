@@ -19,16 +19,27 @@ class Family {
     }
     
     func householdIncome() -> Int{
+        var legal = false
         if (members != nil) {
-            var total = 0
             for (var index = 0; index < members!.count; index++) {
-                if (members![index].job!.jobType == "hourly") {
-                    total = total + members![index].job!.calculateIncome(2000)
-                } else {
-                    total = total + members![index].job!.jobSalary!
+                if (members![index].currentAge >= 21) {
+                    legal = true
                 }
             }
-            return total
+            if (legal) {
+                var total = 0
+                for (var index = 0; index < members!.count; index++) {
+                    if (members![index].job!.jobType == "hourly") {
+                        total = total + members![index].job!.calculateIncome(2000)
+                    } else {
+                        total = total + members![index].job!.jobSalary!
+                    }
+                }
+                return total
+            } else {
+                print("Not Legal Family")
+                return 0
+            }
         }
         return 0
     }
